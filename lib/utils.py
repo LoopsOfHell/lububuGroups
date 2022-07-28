@@ -75,7 +75,6 @@ def make_embed(group_info, date):
             dict(name="Group Name", value=group_info["name"]),
             dict(name="Group Description", value=group_info["description"]),
             dict(name="Group Members", value=group_info["memberCount"])
-            dict(name="Group Funds", value=group_info["fundcount"])
         ],
         footer=dict(
             color = 0xff4d4d,
