@@ -67,17 +67,14 @@ def send_webhook(url, **kwargs):
 
 def make_embed(group_info, date):
     return dict(
-        title="CLAIM HERE!",
-        description="Found Claimable Group!",
+        title="Click Here Claimable Group!",
         url=f"https://www.roblox.com/groups/{group_info['id']}",
         fields=[
             dict(name="Group ID", value=group_info["id"]),
             dict(name="Group Name", value=group_info["name"]),
-            dict(name="Group Description", value=group_info["description"]),
             dict(name="Group Members", value=group_info["memberCount"])
         ],
         footer=dict(
-            color = 0xff4d4d,
             text="By !c3#7213"
         ),
         timestamp=date.isoformat()
