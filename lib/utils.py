@@ -67,7 +67,7 @@ def send_webhook(url, **kwargs):
 
 def make_embed(group_info, date):
     return dict(
-        title="Click Here Claimable Group!",
+        title="Click Here!",
         url=f"https://www.roblox.com/groups/{group_info['id']}",
         fields=[
             dict(name="Group ID", value=group_info["id"]),
